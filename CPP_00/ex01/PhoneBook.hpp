@@ -6,6 +6,7 @@
 # include <string>
 # include <iostream>
 # include <iomanip>
+# include <stdlib.h>
 
 std::string		toUpper(std::string s);
 void			getCommand(Contact contacts[8], int index);

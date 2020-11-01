@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string.h>
 
 void	printCapitalized(char *s)
 {

@@ -29,10 +29,8 @@ static Contact	addContactHelper(std::string type, Contact current)
 {
 	std::string	input;
 
-	std::cout << std::setw(15) << type << ": \n";
-	//std::cin.ignore();
+	std::cout << std::setw(15) << type << ": ";
 	std::getline(std::cin, input);
-	//std::cin.ignore();
 	if (type == "First name")
 		current.setFirstName(input);
 	else if (type == "Last name")
