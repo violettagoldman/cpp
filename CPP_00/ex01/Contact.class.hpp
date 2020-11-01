@@ -1,6 +1,8 @@
 #ifndef CONTACT_HPP
 # define CONTACT_HPP
 
+# include <string>
+
 class Contact
 {
 	public:
@@ -21,6 +23,7 @@ class Contact
 		void			setFavoriteMeal(std::string favoriteMeal);
 		void			setUnderwearColor(std::string underwearColor);
 		void			setDarkestSecret(std::string darkestSecret);
+		void			print();
 
 	private:
 		std::string	_firstName;

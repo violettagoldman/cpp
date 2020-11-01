@@ -1,5 +1,5 @@
 NAME=megaphone
-FLAGS=-Wall -Wextra -Werror
+FLAGS=-Wall -Wextra -Werror -std=c++98
 CC = clang++
 ifeq ($(D), 1)
     FLAGS += -g3 -fsanitize=address

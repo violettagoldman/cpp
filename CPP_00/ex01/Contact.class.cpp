@@ -1,8 +1,24 @@
-#include "Contact.hpp"
+#include "PhoneBook.hpp"
 
-//Contact::Contact(void){};
+Contact::Contact(void){};
 
-//Contact::~Contact(void){};
+Contact::~Contact(void){};
+
+void		Contact::print(void)
+{
+	std::cout << "First name: " << this->_firstName << std::endl;
+	std::cout <<  "Last name: " << this->_lastName << std::endl;
+	std::cout << "Nickname: " << this->_nickname << std::endl;
+	std::cout << "Login: " << this->_login << std::endl;
+	std::cout << "Postal address: " << this->_postalAddress << std::endl;
+	std::cout << "Mail: " << this->_emailAddress << std::endl;
+	std::cout << "Phone: " << this->_phoneNumber << std::endl;
+	std::cout << "Birthday: " << this->_birthdayDate << std::endl;
+	std::cout << "Favorite meal: " << this->_favoriteMeal << std::endl;
+	std::cout << "Underwear color: " << this->_underwearColor << std::endl;
+	std::cout << "Darkest secret: " << this->_darkestSecret << std::endl;
+}
+
 
 std::string	Contact::getFirstName(void) const
 {
