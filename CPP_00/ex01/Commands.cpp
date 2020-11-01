@@ -44,6 +44,8 @@ static Contact	addContactHelper(std::string type, Contact current)
 	else if (type == "Email address")
 		current.setEmailAddress(input);
 	else if (type == "Phone number")
+		current.setPhoneNumber(input);
+	else if (type == "Birthday")
 		current.setBirthdayDate(input);
 	else if (type == "Favorite meal")
 		current.setFavoriteMeal(input);
@@ -71,6 +73,7 @@ void addContact(Contact contacts[8], int *index)
 	current = addContactHelper("Postal address", current);
 	current = addContactHelper("Email address", current);
 	current = addContactHelper("Phone number", current);
+	current = addContactHelper("Birthday", current);
 	current = addContactHelper("Favorite meal", current);
 	current = addContactHelper("Underwear color", current);
 	current = addContactHelper("Darkest secret", current);
