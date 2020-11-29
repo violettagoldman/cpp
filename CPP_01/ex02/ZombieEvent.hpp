@@ -3,6 +3,7 @@
 
 # include <string>
 # include <iostream>
+# include <stdlib.h>
 # include "Zombie.hpp"
 
 class	ZombieEvent

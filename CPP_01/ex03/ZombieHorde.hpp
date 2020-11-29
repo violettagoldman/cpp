@@ -2,6 +2,7 @@
 # define ZOMBIEHORDE_HPP
 
 # include "Zombie.hpp"
+# include <stdlib.h>
 
 class ZombieHorde
 {

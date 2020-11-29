@@ -1,6 +1,8 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <stdlib.h>
+#include <string.h>
 
 static void	handle(char *file, char *s1, char *s2)
 {
@@ -9,8 +11,13 @@ static void	handle(char *file, char *s1, char *s2)
 	std::string				line;
 	std::string::size_type	n;
 
-	out.open(std::string(file) + ".replace");
 	in.open(file);
+	if (in.fail())
+	{
+		std::cout << "Can't read input file\n";
+		exit(-1);
+	}
+	out.open((std::string(file) + std::string(".replace")).c_str());
 	if (out.fail())
 	{
 		std::cout << "Can't create output file\n";
