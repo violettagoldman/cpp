@@ -2,6 +2,7 @@
 # define SUPER_TRAP_HPP
 
 # include <iostream>
+# include <stdlib.h>
 # include "NinjaTrap.hpp"
 # include "FragTrap.hpp"
 

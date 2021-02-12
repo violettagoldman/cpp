@@ -2,6 +2,7 @@
 # define FRAG_TRAP_HPP
 
 # include <iostream>
+# include <stdlib.h>
 # include "ClapTrap.hpp"
 
 class FragTrap : virtual public ClapTrap

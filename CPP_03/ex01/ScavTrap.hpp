@@ -1,7 +1,8 @@
 #ifndef SCAV_TRAP_HPP
 # define SCAV_TRAP_HPP
 
-#include <iostream>
+# include <iostream>
+# include <stdlib.h>
 
 class ScavTrap
 {
