@@ -32,10 +32,14 @@ int	main(void)
 	std::cout << *he;
 	he->equip(pf);
 	he->attack(p);
+	he->attack(p);
+	me->attack(p);
+	me->attack(p);
 	std::cout << *he;
 	delete me;
 	delete he;
 	delete pr;
 	delete pf;
+	delete p;
 	return (0);
 }
