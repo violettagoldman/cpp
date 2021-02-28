@@ -2,6 +2,7 @@
 # define NINJA_TRAP_HPP
 
 # include <iostream>
+# include <stdlib.h>
 # include "ClapTrap.hpp"
 # include "FragTrap.hpp"
 # include "ScavTrap.hpp"
