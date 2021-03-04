@@ -3,6 +3,8 @@
 
 # include <iostream>
 # include <stdexcept>
+# include <ctime>
+# include <cstdlib>
 
 # include "Bureaucrat.hpp"
 

@@ -59,7 +59,7 @@ void	ShrubberyCreationForm::execute(const Bureaucrat &b) const
 "               .::(@:. \n";
 	std::string fileName = _target + "_shrubbery";
 	Form::execute(b);
-	std::ofstream file(fileName);
+	std::ofstream file(fileName.c_str());
 	if (file.fail())
 		throw FileWritingException();
 	file << tree;

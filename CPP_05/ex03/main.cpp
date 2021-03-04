@@ -22,6 +22,7 @@ int		main(void)
 	{
 		std::cout << bim.getName() << " can't make " << form->getName() << " because " << e.what() << std::endl;
 	}
+	delete form;
 	try
 	{
 		form = someRandomIntern.makeForm("Shrubbery Creation", "Bim");
@@ -32,6 +33,7 @@ int		main(void)
 	{
 		std::cout << bim.getName() << " can't make " << form->getName() << " because " << e.what() << std::endl;
 	}
+	delete form;
 	try
 	{
 		form = someRandomIntern.makeForm("Presidential Pardon", "Bill");
