@@ -5,6 +5,7 @@
 #include <cctype>
 #include <math.h>
 #include <climits>
+#include <stdlib.h>
 
 std::string		prepString(char *str)
 {
@@ -98,7 +99,7 @@ void	convert(std::string str)
 	{
 		try
 		{
-			conversion = std::stod(str);
+			conversion = atof(str.c_str());
 		}
 		catch(std::exception &e)
 		{
