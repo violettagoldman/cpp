@@ -1,5 +1,10 @@
 #include <iostream>
 #include <iomanip>
+#include <string>
+#include <sstream>
+#include <cctype>
+#include <math.h>
+#include <climits>
 
 std::string		prepString(char *str)
 {

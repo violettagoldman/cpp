@@ -105,7 +105,7 @@ void	identify_from_reference(Base &p)
 		base = dynamic_cast<A&>(p);
 		std::cout << "It's A\n";
 	}
-	catch (std::bad_cast e)
+	catch (std::exception& e)
 	{
 		std::cout << "It's not A\n";
 	}
@@ -114,7 +114,7 @@ void	identify_from_reference(Base &p)
 		base = dynamic_cast<B&>(p);
 		std::cout << "It's B\n";
 	}
-	catch (std::bad_cast e)
+	catch (std::exception& e)
 	{
 		std::cout << "It's not B\n";
 	}
@@ -123,7 +123,7 @@ void	identify_from_reference(Base &p)
 		base = dynamic_cast<C&>(p);
 		std::cout << "It's C\n";
 	}
-	catch (std::bad_cast e)
+	catch (std::exception& e)
 	{
 		std::cout << "It's not C\n";
 	}
