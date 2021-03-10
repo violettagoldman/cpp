@@ -52,4 +52,7 @@ int		main(void)
 	{
 		std::cout << "Can't access arr[6]\n";
 	}
+	delete arrInt;
+	delete arrStr;
+	delete arrAwe;
 }
