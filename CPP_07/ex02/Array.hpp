@@ -9,12 +9,12 @@ template <typename T>
 class Array
 {
 	public:
-		Array(void) : _array(nullptr), _len(0) {}
+		Array(void) : _array(0), _len(0) {}
 		Array(unsigned int n) : _array(new T[n]()), _len(n){}
-		Array(Array const &src): _array(nullptr), _len(0) {*this = src;}
+		Array(Array const &src): _array(0), _len(0) {*this = src;}
 		~Array(void)
 		{
-			if (_array != nullptr)
+			if (_array != 0)
 				delete [] _array;
 		}
 
@@ -22,7 +22,7 @@ class Array
 		{
 			if (this != &src)
 			{
-				if (_array != nullptr)
+				if (_array != 0)
 					delete [] _array;
 				_array = new T[src.size()];
 				_len = src.size();
