@@ -4,6 +4,10 @@
 # include <iostream>
 # include <stdexcept>
 # include <vector>
+# include <algorithm>
+# include <cmath>
+# include <climits>
+# include <functional>
 
 class Span
 {
